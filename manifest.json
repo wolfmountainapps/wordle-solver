@@ -1,0 +1,21 @@
+{
+    "name" : "Wordle Solver",
+    "version" : "0.1",
+    "manifest_version": 3,
+    "description" : "Automatically solves Wordle",
+    "author": "wolfmountainapps",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["https://www.nytimes.com/games/wordle/index.html"],
+          "js": ["wordle-solver.js"]
+        }
+      ],
+    "icons" : {
+        "32" : "wordle-icon-32.png",
+        "48" : "wordle-icon-48.png",
+        "128" : "wordle-icon-128.png"
+    }
+}
