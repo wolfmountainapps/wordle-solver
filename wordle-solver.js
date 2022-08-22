@@ -35,7 +35,7 @@
 /*
  * Logging
  */
-LOGGING_ON = false;
+LOGGING = false;
 
 /*
  * Constants
@@ -72,7 +72,7 @@ const USED_WORDS = ["waste","treat","shrug","twang","twice","gruel","poker","kha
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
 function logger(text) {
-    if (LOGGING_ON) {
+    if (LOGGING) {
         console.log(text);
     }
 }
